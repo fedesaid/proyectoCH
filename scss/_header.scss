@@ -1,0 +1,269 @@
+/* barra navegacion - header */
+
+.pepito:hover {
+    color: black;
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    font-family:monospace, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 4px -6px  $rosaclaro;
+    margin-left:30%;  
+    margin-right: 30%;
+    margin-bottom: 1%; 
+    margin-top:1%;
+    background-color:$rosa;    
+    height: 70px;
+    position: relative;
+ 
+    
+}
+
+.fondo {
+    
+    background-color: $rosa;
+}
+
+
+
+.letraBlanca {
+    color: white;
+}
+
+
+.redes__contenido {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+   
+}
+
+.redes__iconos {
+    width: ($ancho-iconos)-10;
+    height: ($ancho-iconos)-10;
+    margin-left: 20px;
+        
+}
+
+.redes__contenido--color {
+    display: flex;
+    align-self: flex-end;
+    color: white;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    margin-left: -30px;
+    
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    
+    list-style: none;
+    }
+}
+
+.navbar {
+    border-radius: 20px;
+}
+
+.nav__menu {
+    display: inline-block;
+}
+
+.nav__boton  {
+    background-color:#f1728b;
+    color: white;
+    padding: 11px 25px;
+    text-align: center;
+    font-family: monospace, Helvetica, sans-serif;
+    text-decoration:none;
+    display: inline-block;
+    box-shadow: 4px -6px  $rosaclaro;
+    border-radius:5px;
+    margin:4px 4px;
+    transition-duration: 0.6s;
+     
+    
+}
+.nav__boton:hover {
+    background-color: $rosaclaro;
+    color:black;
+ }
+
+
+
+.nav ul li {
+    display: inline-block;
+    position:relative;
+    font-size:25px;
+    text-decoration: none;
+    
+ }
+     
+ .nav ul ul {
+    position: absolute;
+    display: none;
+    
+ }
+ .nav ul ul li {
+    display: block;
+    text-decoration: none;
+    
+ }
+ ul li:hover ul {
+    display:block;
+    margin-bottom: 400px;
+    
+}
+
+.baja:hover {
+    margin-bottom: 400px;
+}
+
+ .nav__desplegableMenu {
+    transition-duration: 0.75s;
+ }
+ 
+ .nav__desplegableMenu:hover {
+   margin-bottom:150px;   
+ }
+
+ .nav__desplegableSuc {
+    transition-duration: 0.75s;
+ }
+ 
+ .nav__desplegableSuc:hover {
+   margin-bottom:110px;   
+ }
+
+ 
+ li a {
+    transition-duration: 0.6s;
+ }
+
+
+.nav__desplegableMenu--item a,
+.nav__desplegableSuc--item a{
+    background-color: #f1728b;
+    text-decoration: none;
+    border-radius: 5px;
+    color:white;
+    font-family:monospace, Helvetica, sans-serif;
+    padding: 5px 5px;
+    box-shadow: 4px -4px  $rosaclaro;
+
+}
+
+.nav__desplegableMenu--item,
+.nav__desplegableSuc--item {
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.nav__desplegableMenu--item a:hover,
+.nav__desplegableSuc--item a:hover {
+    background-color: $rosaclaro;
+    color:black;
+
+}
+ 
+
+/* fin submenu */
+
+#logoInicial {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin-left: 620px;
+    margin-top: 10px;
+    transition-duration: 250ms;
+}
+
+#logoInicial:hover {
+   transform: scale(1.10);
+   transition-duration: 250ms;
+}
+
+
+/* titulos */
+
+.contenedorTitulos {
+    border-radius: 5px;
+    color:#f1728b;
+    width: 90%;
+    margin-left: 80px;  
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 45px;
+    transition: 250ms;
+    
+}
+
+.contenedorTitulos:hover {
+    background-color: #f1728b;
+    color:white;
+    box-shadow: 8px -10px  $rosaclaro;
+    transition: 250ms;
+    
+}
+
+.contenedorTitulos:hover h1{
+    background-color: #f1728b;
+    color:white;
+    box-shadow: 8px -10px  $rosaclaro;
+    transition: 250ms;
+}
+
+
+.contenedorTitulos__h1 {
+    font-size: 60px;
+    font-family: $fuente;
+    text-align: center;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    padding-top: 10px;
+    
+}
+
+
+
+
+h2 {
+    color:#f1728b;
+    font-family: $fuente;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: $fuente;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+form h4 {
+    color:black;
+    font-family: $fuente;
+    font-size: 16px;
+
+}
+
+.logo-nav {
+    color: black;
+    text-transform: uppercase;
+   }
+    .logo-nav img {
+      width: 2.5em;
+    }

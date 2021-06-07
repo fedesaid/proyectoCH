@@ -1,0 +1,160 @@
+/* seccion ppal con imagenes */
+
+img {
+    margin-right: 3px;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    
+    
+    border: 1px solid black;
+    margin:20px auto;
+    width: 100%;
+    max-width: 1400px;
+    gap: 5px;
+    background-color:  #f1728b; 
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-template-areas: "grid-container__titulos grid-container__titulos grid-container__titulos"
+                         "grid-container__item-1 grid-container__item-2 grid-container__item-3"
+                         "grid-container__item-4 grid-container__item-5 grid-container__item-6"
+                         "grid-container__titulos--pie grid-container__titulos--pie grid-container__titulos--pie";
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+}
+
+.grid-container .grid-container__titulos {
+    grid-area: grid-container__titulos;
+    
+    
+    
+}
+
+.grid-container__item-1 {
+    grid-area: grid-container__item-1;
+    
+}
+
+.grid-container__item-2 {
+    grid-area: grid-container__item-2;
+}
+
+.grid-container__item-3 {
+    grid-area:grid-container__item-3;
+}
+
+.grid-container__item-4 {
+    grid-area:grid-container__item-4;
+}
+
+.grid-container__item-5 {
+    grid-area:grid-container__item-5;
+}
+
+.grid-container__item-6 {
+    grid-area:grid-container__item-6;
+}
+
+
+.grid-container__titulos--pie  {
+    grid-area:grid-container__titulos--pie;
+    
+}
+
+.grid-container__titulos--pie a{
+    text-decoration: underline;
+    color: white;
+    font-size: 35px ;
+}
+
+.grid-container h2 {
+    color: white;
+    
+}
+
+.iframe {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.iframe h2 {
+    font-size: 40px;
+}
+
+.iframe p {
+    font-size: 30px;
+    font-family: $fuente;
+    
+}
+
+/* tabla con menu */
+
+#menu {
+    text-align: center;
+    font-size: 3rem;
+}
+
+table {
+    border-color: black;   
+    color:black;
+    font-family: monospace;
+    font-size: 15px;
+    background-color: #ffcdd6;
+    border-radius: 8px;
+    }
+
+th {
+    font-size: 25px;
+    color:white;
+    background-color: #fc819a;
+}
+
+td.nombreRoll {
+    font-size: 20px;
+}
+
+td.angosto {
+    width: 200px;
+}
+
+.center
+{
+ text-align: center;
+ list-style-position: inside;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+ol.center li
+
+{
+ text-align: left;
+ margin-left: 45%;
+}
+
+td {
+    text-align: center;
+}
+
+p {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+    transition: 250ms;
+}
+
+.grid-container img {
+    transition: 250ms;
+}

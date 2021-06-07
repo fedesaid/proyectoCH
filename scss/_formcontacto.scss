@@ -1,0 +1,55 @@
+/* formulario contacto */
+
+textarea {
+    resize: none;
+}
+
+.contacto {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    color: $rosa;
+}
+
+
+.contacto__formulario {
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ffb1be;
+    padding: 25px;
+    border-radius: 5px ;
+    border:dashed 2px black;
+    margin:10px;
+}
+
+.form-select {
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+
+.contacto__formulario__titulo {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.contacto__formulario__label {    
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+}
+
+.radius {
+    border-radius: 8px;
+    width: 200px;
+    height: 25px;
+}
+
+.contacto__formulario__label--upper {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Inconsolata', monospace; 
+
+    
+}
