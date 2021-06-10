@@ -105,6 +105,11 @@
         transition: 250ms;
     }
 
+    .home-newsletter {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
 
 }
 
@@ -116,7 +121,17 @@
 
 @media screen and  (max-width:480px) {
 
-   
+    .home-newsletter {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .size {
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.5rem;
+        text-transform: lowercase;
+    }
 
 
     .grid-container img:hover {
