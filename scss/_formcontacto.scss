@@ -5,39 +5,40 @@ textarea {
 }
 
 .contacto {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     color: $rosa;
 }
 
 
 .contacto__formulario {
     font-family: monospace;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     background-color: #ffb1be;
-    padding: 25px;
-    border-radius: 5px ;
+    padding: 1.563rem;
+    border-radius: 0.3rem;
     border:dashed 2px black;
     margin:10px;
 }
 
 .form-select {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Inconsolata', monospace;
 
 }
 
 
 .contacto__formulario__titulo {
-    font-size: 35px;
-    margin-bottom: 30px;
+    font-size: 2.188rem;
+    margin-bottom: 1.875rem;
+    text-align: center;
 }
 
 .contacto__formulario__label {    
     font-family: 'Inconsolata', monospace;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .radius {
@@ -53,3 +54,73 @@ textarea {
 
     
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #3ead44;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  input[type=submit]:hover {
+    background-color: green;
+  }
+
+  input[type=reset] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=reset]:hover {
+    background-color: #a32a26;
+  }
+
+  input[type=checkbox] {
+      transform: scale(2);
+      margin-left: 2rem;
+  }
+
+  .codigoqr {
+      width: 200px;
+      height: 300px;
+  }
+
+  .qrcont {
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+
+  ::-webkit-input-placeholder {
+      font-size: 1.5rem;
+  }
+
+  .botonesform {
+      text-align: center;
+  }
+  
+  .fc {
+    border-radius: 5px;
+    background-color: pink;
+    padding: 60px;
+    margin: 1.8rem;
+  }

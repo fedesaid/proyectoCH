@@ -5,26 +5,13 @@
 
  .qs-fondo h1 {
     font-size:60px;
-    color:white;
-    transition: 250ms;
-}
-
-.qs-fondo:hover h1:hover {
-    font-size:60px;
     color:$rosa;
     transition: 250ms;
 }
 
-.qs-fondo {
-    background: url(../img/qs-9.jpg)  ;
-    background-size: cover;
-    width: 90%;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    margin: 2rem 2rem;
-}
+
+
+
 
 .cover {
     object-fit: cover;

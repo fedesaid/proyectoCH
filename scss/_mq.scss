@@ -8,7 +8,13 @@
 
 @media screen and  (max-width:768px) {
 
-    
+    .qrcont{
+        display: none;
+    }
+
+    .contacto__formulario__label {
+        font-size: 1.5rem;
+    }
 
     ul li:hover ul {
         display:block;
@@ -121,15 +127,29 @@
 
 @media screen and  (max-width:480px) {
 
+    .qrcont {
+        display: none;
+    }
+
+    input[type=checkbox] {
+        transform: scale(2);
+        margin-left: 1px;
+        margin-top: 1rem;
+    }
+
+    .nav-item a {
+        font-size: 1rem;
+    }
+
     .home-newsletter {
         margin-left: 0%;
         margin-right: 0%;
     }
 
     .size {
-        width: 6rem;
-        height: 2rem;
-        font-size: 0.5rem;
+        width: 9rem;
+        height: 4rem;
+        font-size: 1rem;
         text-transform: lowercase;
     }
 

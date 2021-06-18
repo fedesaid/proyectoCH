@@ -56,7 +56,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Contacto</a>
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
                   </li>
                 </ul>          
               </div>
@@ -113,52 +113,51 @@
     
     </header>
 
-    
-
     <div id="formularioContacto">
         <!-- FORM DE CONTACTO -->
-        <h1 class="contacto">Contacto</h1>
-            <form class="contacto__formulario" action="" method="post">
-                <fieldset>
-                    <legend class="contacto__formulario__titulo">Formulario de contacto</legend>
-                    <label class="contacto__formulario__label" for="name">Nombre:</label>
-                    <input class="radius" type="text" name="nombre" id="name" >  <br><br>
-                    <label  class="contacto__formulario__label" for="lastname">Apellido:</label>
-                    <input  class="radius" type="text" name="apellido" id="lastname" >  <br><br>
-                    <label  class="contacto__formulario__label" for="email">Mail:</label>
-                    <input  class="radius" type="email" name="mail" id="email" > <br><br>
-                    
+        <h2 class="contacto">Contacto</h2>
+           
+            <div class="fc">
+              <form action="">
+              <legend class="contacto__formulario__titulo">Formulario de contacto</legend>
 
-                    <!-- <h4>Motivo de la consulta</h4>
-                    <select name="motivo-consulta"> 
-                        <option value="reservas">Reservas</option>
-                        <option value="escuela">Escuela de Sushi</option>
-                        <option value="eventos">Eventos</option>
-                        <option value="sugerencias">Sugerencias</option>
-                        <option value="otros">Otros</option>                    
-                    </select><br><br>     -->
-                    <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>Motivo del contacto</option>
-                          <option value="reservas">Reservas</option>
-                        <option value="escuela">Escuela de Sushi</option>
-                        <option value="eventos">Eventos</option>
-                        <option value="sugerencias">Sugerencias</option>
-                        <option value="otros">Otros</option>              
-                        </select>
-                        <label class="eqpa" for="floatingSelect">¿en qué podemos ayudarte?</label>
-                      </div>     <br><br>       
-                    <label class="contacto__formulario__label" for="acepta">¿Desea recibir promociones y novedades?</label>
-                    <input  type="checkbox" name="acepta" value="acepta"><br><br>
-                    <label class="contacto__formulario__label" for="mensaje">Mensaje:</label><br><br>
-                    <div class="form-floating">
-                        <textarea cols="100" rows="5" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea"> Escribí un comentario... </label>
-                      </div><br><br>
-                    <!-- <textarea cols="100" rows="5" id="mensaje "name="Mensaje de usuario" required> Escribí un comentario... </textarea> <br><br> -->
-                    <input class="contacto__formulario__label--upper" type="submit" value="Enviar">
-                    <input class="contacto__formulario__label--upper" type="reset" value="Limpiar Formulario">
-                </fieldset>
+                <label class="contacto__formulario__label" for="fname">Nombre</label>
+                <input type="text" id="fname" name="firstname">
+            
+                <label class="contacto__formulario__label" for="lname">Apellido</label>
+                <input type="text" id="lname" name="lastname">
+                  <br><br>
+
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Motivo del contacto</option>
+                    <option value="reservas">Reservas</option>
+                  <option value="escuela">Escuela de Sushi</option>
+                  <option value="eventos">Eventos</option>
+                  <option value="sugerencias">Sugerencias</option>
+                  <option value="otros">Otros</option>              
+                  </select>
+                  <label class="eqpa" for="floatingSelect">¿en qué podemos ayudarte?</label>
+                </div> 
+                  <br><br>
+                  
+                <label class="contacto__formulario__label" for="acepta">¿Desea recibir promociones y novedades?</label>
+                <input  type="checkbox" name="acepta" value="acepta"> <br><br>
+                
+                <label class="contacto__formulario__label" for="subject">Mensaje</label>
+                <textarea id="subject" name="subject" placeholder="Dejanos tu comentario..." style="height:200px"></textarea>
+                  <br><br>
+                  
+                <div class="botonesform">
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Limpiar formulario">
+                </div>
+              </form>
+            </div>
+
+            <div class="qrcont">
+              <img class="codigoqr" src="img/frame.png">
+              <h2>¿Tenés dudas? ¡Escaneá el código y escribinos por Whatsapp!</h2>
             </div>
 
             <div id="whatsapp-icon" style="position:fixed; right:3px; bottom:10px; text-align:center; padding:3px">

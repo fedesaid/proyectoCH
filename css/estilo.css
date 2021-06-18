@@ -367,6 +367,9 @@ p {
   background: #243c4f;
   color: #fff; }
 
+.carousel-caption h5 {
+  background-color: rgba(0, 0, 0, 0.123); }
+
 /* inicio sucursales */
 .sucursales-container {
   background-color: #ff869f;
@@ -420,32 +423,33 @@ textarea {
   resize: none; }
 
 .contacto {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   color: #f1728b; }
 
 .contacto__formulario {
   font-family: monospace;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   background-color: #ffb1be;
-  padding: 25px;
-  border-radius: 5px;
+  padding: 1.563rem;
+  border-radius: 0.3rem;
   border: dashed 2px black;
   margin: 10px; }
 
 .form-select {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: 'Inconsolata', monospace; }
 
 .contacto__formulario__titulo {
-  font-size: 35px;
-  margin-bottom: 30px; }
+  font-size: 2.188rem;
+  margin-bottom: 1.875rem;
+  text-align: center; }
 
 .contacto__formulario__label {
   font-family: 'Inconsolata', monospace;
-  font-size: 30px; }
+  font-size: 1.875rem; }
 
 .radius {
   border-radius: 8px;
@@ -456,6 +460,64 @@ textarea {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Inconsolata', monospace; }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=submit] {
+  background-color: #3ead44;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center; }
+
+input[type=submit]:hover {
+  background-color: green; }
+
+input[type=reset] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=reset]:hover {
+  background-color: #a32a26; }
+
+input[type=checkbox] {
+  transform: scale(2);
+  margin-left: 2rem; }
+
+.codigoqr {
+  width: 200px;
+  height: 300px; }
+
+.qrcont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+::-webkit-input-placeholder {
+  font-size: 1.5rem; }
+
+.botonesform {
+  text-align: center; }
+
+.fc {
+  border-radius: 5px;
+  background-color: pink;
+  padding: 60px;
+  margin: 1.8rem; }
 
 .titulin-6 {
   font-size: 6rem; }
@@ -658,6 +720,10 @@ a :hover {
 /* MEDIA QUERIES TABLET */
 /* MEDIA QUERIES TABLET */
 @media screen and (max-width: 768px) {
+  .qrcont {
+    display: none; }
+  .contacto__formulario__label {
+    font-size: 1.5rem; }
   ul li:hover ul {
     display: block;
     margin-bottom: 10px; }
@@ -718,13 +784,21 @@ a :hover {
 /* MEDIA QUERIES CELULAR */
 /* MEDIA QUERIES CELULAR */
 @media screen and (max-width: 480px) {
+  .qrcont {
+    display: none; }
+  input[type=checkbox] {
+    transform: scale(2);
+    margin-left: 1px;
+    margin-top: 1rem; }
+  .nav-item a {
+    font-size: 1rem; }
   .home-newsletter {
     margin-left: 0%;
     margin-right: 0%; }
   .size {
-    width: 6rem;
-    height: 2rem;
-    font-size: 0.5rem;
+    width: 9rem;
+    height: 4rem;
+    font-size: 1rem;
     text-transform: lowercase; }
   .grid-container img:hover {
     transform: scale(1.05);
@@ -841,6 +915,9 @@ a :hover {
   font-size: 2rem;
   margin-top: 2rem; }
 
+.cover {
+  object-fit: cover; }
+
 .error-h1 {
   color: #f1728b; }
 
@@ -897,23 +974,8 @@ a :hover {
 
 .qs-fondo h1 {
   font-size: 60px;
-  color: white;
-  transition: 250ms; }
-
-.qs-fondo:hover h1:hover {
-  font-size: 60px;
   color: #f1728b;
   transition: 250ms; }
-
-.qs-fondo {
-  background: url(../img/qs-9.jpg);
-  background-size: cover;
-  width: 90%;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  border-radius: 50px;
-  margin: 2rem 2rem; }
 
 .cover {
   object-fit: cover; }
